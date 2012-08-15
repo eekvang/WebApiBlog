@@ -74,7 +74,6 @@ DocProject/Help/html
 publish
 
 #NuGet
-packages
 _bin_deployableAssemblies
 
 # Publish Web Output
