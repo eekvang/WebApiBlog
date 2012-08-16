@@ -3,6 +3,7 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using WebApiBlog.Filters;
 using WebApiBlog.Models;
 using WebApiBlog.Repositories;
 
@@ -34,6 +35,7 @@ namespace WebApiBlog.Controllers
             return blogEntry;
         }
 
+        [ValidationActionFilter]
         public HttpResponseMessage Post(BlogEntry blogEntry)
         {
             _repository.Insert(blogEntry);

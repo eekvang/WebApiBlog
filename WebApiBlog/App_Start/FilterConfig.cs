@@ -1,5 +1,5 @@
-﻿using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
+using WebApiBlog.Filters;
 
 namespace WebApiBlog
 {
